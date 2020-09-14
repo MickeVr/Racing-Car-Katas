@@ -3,6 +3,8 @@ CREATE OR REPLACE PACKAGE pack_telemetry_diagnostic_ctrl IS
       RETURN VARCHAR2;
 
    PROCEDURE set_diagnostic_info(diagnostic_info VARCHAR2);
+   
+   PROCEDURE check_transmission;
 END pack_telemetry_diagnostic_ctrl;
 /
 
