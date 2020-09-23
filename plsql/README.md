@@ -22,9 +22,11 @@ Install all the sql files with your favorite database client by executing:
 
 ## Folders
 
-- `src` - Contains the exercise TelemetrySystem:
+- `src` - Contains the exercises :
+  - Leaderboard
   - TelemetrySystem
-- Each directory contains a main and test folder
+  
+- Each exercise directory contains a main and test folder
   - main - Contains the main code
   - test - Contains the corresponding tests
 
@@ -36,7 +38,7 @@ utPLSQL is used to run tests. To execute all tests, run the following command on
 exec ut.run();
 ```
 
-To run only the tests of a single exercise, use the suite for the exercise
+To run only the tests of a single exercise, use the suite for the exercise, e.g.
 
 ```shell script
 exec ut.run(':TelemetrySystem');

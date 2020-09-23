@@ -1,0 +1,16 @@
+CREATE OR REPLACE TYPE driver FORCE IS OBJECT
+(
+   name VARCHAR2(500),
+   country VARCHAR2(500),
+   MAP MEMBER FUNCTION name_country
+      RETURN VARCHAR2
+) NOT FINAL;
+
+CREATE OR REPLACE TYPE BODY driver AS
+   MAP MEMBER FUNCTION name_country
+      RETURN VARCHAR2 IS
+   BEGIN
+      RETURN RPAD(name, 500) || RPAD(country, 500);
+   END name_country;
+END;
+/

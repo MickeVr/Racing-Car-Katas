@@ -1,0 +1,1 @@
+CREATE OR REPLACE TYPE race_table FORCE IS TABLE OF race;
